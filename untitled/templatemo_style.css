@@ -424,8 +424,10 @@ img {
 #content-category
 {
     font-weight: 600;
-    display: block;
+    display:block;
     font-size: 20px;
+    /*float:left;*/
+    /*width: 350px;*/
     color: #999999;
     margin: 10px auto 10px auto;
 }
@@ -466,4 +468,10 @@ img {
 {
     color: green;
     cursor: pointer;
+}
+#sorters
+{
+    display:block;
+    margin: 5px auto 5px auto;
+    float:right;
 }

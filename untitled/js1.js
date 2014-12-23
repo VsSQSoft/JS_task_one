@@ -27,13 +27,34 @@ $(document).ready(function() {
     $('a#go').click();
 
 
-    $(document.getElementsByClassName('rating')).click( function(event)
+    $(document.getElementsByClassName('rating')).click( function()
     {
         var rating = $(this).text().substring(9,20);
         rating++;
         //alert(rating);
         $(this).text('Рейтинг: '+rating);
     });
+    $('div#sorters input').click(function()
+        {
+            var $target =$('div#main-content');
+            var $massive = $('div.dynamic-content span#cost');
+            var radio = $('input[name=sort]:checked').val();
+            if (radio == 1) {
+                alert(radio);
+                $massive.sort(function (a,b)
+                    {
+                        var an = $(a).substring(6,8);
+                        var bn = $(b).substring(6,8);
+                        alert(an);
+                        if (an && bn) {
+                            return an.localeCompare(bn);
+                        }
+                        return 0;
+                    });}
+            else if (radio== 2) {}
+            else {}
+            $massive.detach().appendTo($target);
+        });
 
 });
 
