@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Game Website Template, Free Download, XHTML/CSS Layout</title>
+<meta name="keywords" content="Game Website Template, free templates, website templates, CSS, XHTML" />
+<meta name="description" content="Game Website Template - download free XHTML/CSS files from templatemo.com" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="jquery-1.2.6.js"> </script>
+    <script type="text/javascript" src="js1.js"> </script>
+</head>
+<body>
+<div id="modal_form"><!-- Само окно -->
+    <span id="modal_close"> ПРОПУСТИТЬ </span> <!-- Кнопка закрыть -->
+   <div id ="modal-radio">
+       <input type="radio" name="reglog" value="1" checked onclick="registration()"> Регистрация </input>
+       <input type="radio" name="reglog" value="2" onclick="login()"> Вход </input>
+    </div>
+    <div id="reg-form">
+      <form action="#" method="post" title="Регистрация">
+          <fieldset>
+              <legend> Введите ваши данные </legend>
+         <input type="text" class="reg-form-inputs" maxlength="25" required="required" placeholder="Имя">
+         <input type="email" class="reg-form-inputs" maxlength="25" required="required" placeholder="Почта">
+              <br/>
+         <label> Пол
+             <input type="radio" name="gender" value="male" checked> Мужской </input>
+             <input type="radio" name="gender" value="female"> Женский </input>
+             </label>
+          </fieldset>
+          <input type="submit" class="reg-form-confirm"> </input>
+      </form>
+      </div>
+    <div id="log-form">
+        <form action="#" method="get" title="Логин">
+            <fieldset>
+            <legend> Вход </legend>
+            <label> Логин <input type="text" maxlength="25" placeholder="Логин" required> </input> </label> <br/>
+            <label> Пароль <input type="password" maxlength="20" required> </label>
+            </fieldset>
+            <input type="submit" class="reg-form-confirm"> </input>
+        </form>
+    </div>
+     </div>
+       </div>
+</div>
+<div id="overlay"></div>
+
+
+<div id="templatemo_wrapper_outer">
+<div id="templatemo_wrapper_inner">
+	
+    <div id="carousel">
+      <div class="carousel-button-left" onclick="carousel_left()"> <img src="images/carousel-left.png" alt="LEFT"> </div>
+      <div class="carousel-button-right" onclick="carousel_right()"><img src="images/carousel-right.png" alt="RIGHT"> </div>
+
+       <div class="carousel-area">
+        <div class="carousel-items">
+            <div class="carousel-item-block">
+            <a href="#" class="a-carousel-image-link"> <img src="images/CarouselImage1.jpg" alt="SORRY"></a>
+            </div>
+            <div class="carousel-item-block">
+                <a href="#" class="a-carousel-image-link"> <img src="images/CarouselImage2.jpg" alt="SORRY"></a>
+            </div>
+            <div class="carousel-item-block">
+                <a href="#" class="a-carousel-image-link"> <img src="images/CarouselImage3.jpg" alt="SORRY"></a>
+            </div>
+            <div class="carousel-item-block">
+                <a href="#" class="a-carousel-image-link"> <img src="images/CarouselImage4.jpg" alt="SORRY"></a>
+            </div>
+            <div class="carousel-item-block">
+                <a href="#" class="a-carousel-image-link"> <img src="images/CarouselImage5.jpg" alt="SORRY"></a>
+            </div>
+        </div>
+       </div>
+
+
+    </div>
+
+    <div id="templatemo_menu">
+	    <ul>
+            <li><a href="#" class="current" id = "go">Home</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div> <!-- end of menu -->
+    
+    <div id="templatemo_content_wrapper">
+    
+    	<div class="templatemo_side_bar margin_right_10">
+        	
+            <div class="header_01">Games by Platform</div>
+            	<ul>
+                	<li><a href="#" onclick="show_submenu_pc()">PC</a>
+                    <ul id="submenu-pc" class="submenu">
+                        <li> <a href="#">x8086</a> </li>
+                        <li> <a href="#">Pentium 4</a> </li>
+                        <li> <a href="#">QuadCoreKiller</a> </li>
+                    </ul>
+                    </li>
+                    <li><a href="#" onclick="show_submenu_playstation()">PLAYSTATION&reg; 3</a>
+                        <ul id="submenu-playstation" class="submenu">
+                            <li> <a href="#">PLAYSTATION 1</a> </li>
+                            <li> <a href="#">PLAYSTATION 2</a> </li>
+                            <li> <a href="#">PLAYSTATION 3</a> </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" onclick="show_submenu_psp()">PSP&reg; 3</a>
+                        <ul id="submenu-psp" class="submenu">
+                            <li> <a href="#">Older PSP</a> </li>
+                            <li> <a href="#">Current-Gen PSP</a> </li>
+                            <li> <a href="#">Next-Gen PSP</a> </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" onclick="show_submenu_gamecube()">GAMECUBE&trade;</a>
+                        <ul id="submenu-gamecube" class="submenu">
+                            <li> <a href="#">IDK</a> </li>
+                            <li> <a href="#">WHAT </a> </li>
+                            <li> <a href="#">GAMECUBE&trade;</a> </li>
+                            <li> <a href="#">IS! </a> </li>
+                        </ul>
+                    </li>
+                </ul>
+			
+            <div class="margin_bottom_20 horizontal_divider"></div> 
+			<div class="margin_bottom_20"></div>
+
+            <div class="header_01">Search Any Game</div>     
+            <form action="" method="post">
+                  <input type="text" id="search_field" />
+                  <input type="submit" value="" id="search_button" />
+            </form>
+            <div class="margin_bottom_20"></div>
+        </div> <!-- end of left side bar -->
+        
+        <div class="templatemo_content margin_right_10" id="main-content">
+        
+        	<div class="content_section">
+           	  <div class="header_02">Arcade Game</div>
+              <div class="image_wrapper_01"><img src="images/templatemo_image_01.jpg" alt="image" /></div>
+                <p><span>This  game template is provided by <a href="http://www.templatemo.com" target="_parent">TemplateMo.com</a> for free of charge.</span> You may download, modify and apply this template for your personal or business websites. Credit goes to <a href="http://www.photovaco.com" target="_blank">Free Photos</a> for photos. Praesent tempor, arcu at egestas vestibulum, lorem elit viverra velit, sit amet gravida ligula ante et sem.</p>
+              <div class="margin_bottom_20"></div>
+                <div class="rc_btn_01 fl"><a href="#">Read More</a></div> 
+                
+                <div class="cleaner"></div>
+            </div>
+            
+            <div class="margin_bottom_20 horizontal_divider"></div> 
+			<div class="margin_bottom_20"></div>
+            
+            <div class="content_section">
+           	  <div class="header_02">Fighting Game</div>
+              <div class="image_wrapper_01"><img src="images/templatemo_image_02.jpg" alt="image" /></div>
+                <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> Maecenas pretium diam commodo mauris vestibulum id accumsan enim ultrices. Quisque massa magna, porta nec congue et, elementum eget sem. Nunc vel libero libero, in dignissim urna. </p>
+			  <div class="margin_bottom_20"></div>
+              <div class="rc_btn_01 fl"><a href="#">Read More</a></div>  
+                <div class="cleaner"></div>              
+            </div>
+            
+        	<div class="margin_bottom_40"></div>
+        </div> <!-- end of content -->
+        
+      <!--  <div class="templatemo_side_bar">
+       		
+            <div class="header_01">Latest News</div>
+            
+            <div class="latest_news border_bottom">
+                <div class="header_03"><a href="#">Aenean a bibendum augue</a></div>
+                <p>Fusce egestas feugiat turpis, ac ultrices turpis vestibulum at.</p>
+			</div>
+                        
+            <div class="margin_bottom_10"></div>
+            
+			<div class="latest_news">
+                <div class="header_03"><a href="#">Sed nec enim magna</a></div>
+                <p>Proin lectus orci, iaculis at facilisis sed, sodales a neque.</p>
+			</div>
+            
+          <div class="margin_bottom_20 horizontal_divider"></div> 
+			<div class="margin_bottom_20"></div>
+            
+            <div class="header_01">Sample Video</div>
+
+            <div class="latest_news">
+            	<div class="image_wrapper_02"><span></span><a href="#"><img src="images/templatemo_image_03.jpg" alt="video" /></a></div>
+                <p>Donec venenatis tellus non massa blandit vitae volutpat urna fringilla. Aenean ante lorem, vestibulum eu lacinia.</p>
+	      </div>
+                        
+          <div class="margin_bottom_10"></div>
+        </div> <!-- end of right side bar -->
+    	
+        <div class="cleaner"></div>    
+    </div> <!-- end of content wrapper -->
+    
+</div>
+</div>
+
+ <div id="templatemo_footer">
+        Copyright © 2024 <a href="#">Your Company Name</a> | Designed by <a href="http://www.templatemo.com" target="_parent">Free CSS Templates</a>
+   	</div> <!-- end of footer -->
+    <div class="margin_bottom_10"></div>
+    
+    <div class="content_section">
+    	<center>
+       <a href="http://validator.w3.org/check?uri=referer"><img style="border:0;width:88px;height:31px" src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" width="88" height="31" vspace="8" border="0" /></a>
+<a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px"  src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" vspace="8" border="0" /></a>
+	</center>
+		<div class="margin_bottom_10"></div>
+	</div>
+
+
+
+
+</body>
+</html>
