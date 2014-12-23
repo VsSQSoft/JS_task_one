@@ -93,28 +93,28 @@
         	
             <div class="header_01">Games by Platform</div>
             	<ul>
-                	<li><a href="#" onclick="show_submenu_pc()">PC</a>
+                	<li><a href="#" onclick="show_submenu('submenu-' + this.text.toLowerCase())">PC</a>
                     <ul id="submenu-pc" class="submenu">
                         <li> <a href="#">x8086</a> </li>
                         <li> <a href="#">Pentium 4</a> </li>
                         <li> <a href="#">QuadCoreKiller</a> </li>
                     </ul>
                     </li>
-                    <li><a href="#" onclick="show_submenu_playstation()">PLAYSTATION&reg; 3</a>
+                    <li><a href="#" onclick="show_submenu('submenu-' + this.text.toLowerCase())">PLAYSTATION</a>
                         <ul id="submenu-playstation" class="submenu">
                             <li> <a href="#">PLAYSTATION 1</a> </li>
                             <li> <a href="#">PLAYSTATION 2</a> </li>
                             <li> <a href="#">PLAYSTATION 3</a> </li>
                         </ul>
                     </li>
-                    <li><a href="#" onclick="show_submenu_psp()">PSP&reg; 3</a>
+                    <li><a href="#" onclick="show_submenu('submenu-' + this.text.toLowerCase())">PSP</a>
                         <ul id="submenu-psp" class="submenu">
                             <li> <a href="#">Older PSP</a> </li>
                             <li> <a href="#">Current-Gen PSP</a> </li>
                             <li> <a href="#">Next-Gen PSP</a> </li>
                         </ul>
                     </li>
-                    <li><a href="#" onclick="show_submenu_gamecube()">GAMECUBE&trade;</a>
+                    <li><a href="#" onclick="show_submenu('submenu-' + this.text.toLowerCase())">GAMECUBE</a>
                         <ul id="submenu-gamecube" class="submenu">
                             <li> <a href="#">IDK</a> </li>
                             <li> <a href="#">WHAT </a> </li>
@@ -136,61 +136,69 @@
         </div> <!-- end of left side bar -->
         
         <div class="templatemo_content margin_right_10" id="main-content">
-        
-        	<div class="content_section">
-           	  <div class="header_02">Arcade Game</div>
-              <div class="image_wrapper_01"><img src="images/templatemo_image_01.jpg" alt="image" /></div>
-                <p><span>This  game template is provided by <a href="http://www.templatemo.com" target="_parent">TemplateMo.com</a> for free of charge.</span> You may download, modify and apply this template for your personal or business websites. Credit goes to <a href="http://www.photovaco.com" target="_blank">Free Photos</a> for photos. Praesent tempor, arcu at egestas vestibulum, lorem elit viverra velit, sit amet gravida ligula ante et sem.</p>
+            <span id="content-category"> Категория: PC  </span>
+        	<div class="dynamic-content content-submenu-pc">
+           	  <div class="header_02">NFS Undercover &trade; <span class="cost"> Цена: 500руб.</span></div>
+              <div class="image_wrapper_01"><img src="images/CarouselImage3.jpg" alt="image" /></div>
+                <p><span> Новая Need For Speed</span> и всё такое.<br/> Официальный сайт для загрузки:  <a href="#">NFS: Undercover</a> <br/> Здесь могло бы быть описание игры если б было что описывать:)</p>
               <div class="margin_bottom_20"></div>
-                <div class="rc_btn_01 fl"><a href="#">Read More</a></div> 
-                
+                <div class="rc_btn_01 fl"><a href="#">Купить</a></div>
+                <span class="feedback"> Отзывов: 7</span>
+                <span class="rating"> Рейтинг: 17 </span>
                 <div class="cleaner"></div>
+                <div class="margin_bottom_20 horizontal_divider"></div>
+                <div class="margin_bottom_20"></div>
             </div>
-            
-            <div class="margin_bottom_20 horizontal_divider"></div> 
-			<div class="margin_bottom_20"></div>
-            
-            <div class="content_section">
-           	  <div class="header_02">Fighting Game</div>
-              <div class="image_wrapper_01"><img src="images/templatemo_image_02.jpg" alt="image" /></div>
-                <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> Maecenas pretium diam commodo mauris vestibulum id accumsan enim ultrices. Quisque massa magna, porta nec congue et, elementum eget sem. Nunc vel libero libero, in dignissim urna. </p>
-			  <div class="margin_bottom_20"></div>
-              <div class="rc_btn_01 fl"><a href="#">Read More</a></div>  
-                <div class="cleaner"></div>              
+            <div class="dynamic-content content-submenu-pc">
+            <div class="header_02">Batman: Arkham Asylum <span class="cost"> Цена: 400руб.</span></div>
+            <div class="image_wrapper_01"><img src="images/CarouselImage2.jpg" alt="image" /></div>
+            <p> NA NA NA NA NA <span>BATMAN!!11</span> Миллионер-мститель крушит негодяев. Снова.<br/> Официальный сайт для загрузки:  <a href="#">Batman: Anthology</a> <br/> Зубодробительный файтинг от создателей Tekken&reg;. В ПНД Готэма происходит что-то неладное и разобраться под силу только Черному рыцарю...</p>
+            <div class="margin_bottom_20"></div>
+            <div class="rc_btn_01 fl"><a href="#">Купить</a></div>
+            <span class="feedback"> Отзывов: 4</span>
+                <span class="rating"> Рейтинг: 9 </span>
+            <div class="cleaner"></div>
+                <div class="margin_bottom_20 horizontal_divider"></div>
+                <div class="margin_bottom_20"></div>
+        </div>
+            <div class="dynamic-content content-submenu-pc">
+                <div class="header_02">Cursed crusader. Russian edition. <span class="cost"> Цена: 200руб.</span></div>
+                <div class="image_wrapper_01"><img src="images/CarouselImage1.jpg" alt="image" /></div>
+                <p><span> Чад кутежа и угар во мраке ада</span> <br/> Официальный сайт для загрузки:  <a href="#">Hell's fever</a> <br/> Игра по мотивам автобиографии Сергея "Паука" Троицкого. Дайте убийственный концерт в местном ДК и попробуйте пробиться в политику.</p>
+                <div class="margin_bottom_20"></div>
+                <div class="rc_btn_01 fl"><a href="#">Купить</a></div>
+                <span class="feedback"> Отзывов: 12</span>
+                <span class="rating"> Рейтинг: 2 </span>
+                <div class="cleaner"></div>
+                <div class="margin_bottom_20 horizontal_divider"></div>
+                <div class="margin_bottom_20"></div>
             </div>
-            
+            <div class="dynamic-content content-submenu-playstation">
+                <div class="header_02">Stronghold <span class="cost">Цена: 800руб.</span></div>
+                <div class="image_wrapper_01"><img src="images/CarouselImage5.jpg" alt="image" /></div>
+                <p><span> Возвращение крестоносца!</span> в блеске лат и со щитом.<br/> Официальный сайт для загрузки:  <a href="#">Stronghold3</a> <br/> Одна из самых любимых и почитаемых олдфагами RTS обрела новую жизнь в формате HD, да еще и на консоли!</p>
+                <div class="margin_bottom_20"></div>
+                <div class="rc_btn_01 fl"><a href="#">Купить</a></div>
+                <span class="feedback"> Отзывов: 5</span>
+                <span class="rating"> Рейтинг: 11 </span>
+                <div class="cleaner"></div>
+                <div class="margin_bottom_20 horizontal_divider"></div>
+                <div class="margin_bottom_20"></div>
+            </div>
+            <div class="dynamic-content content-submenu-playstation">
+                <div class="header_02">Fable: The lost chapters <span class="cost">Цена: 550руб.</span></div>
+                <div class="image_wrapper_01"><img src="images/CarouselImage4.jpg" alt="image" /></div>
+                <p><span> Fable 4PS3</span> ...nuff said<br/> Официальный сайт для загрузки:  <a href="#">Fable: The lost chapters</a> <br/> Порт легендарной RPG на консольки)</p>
+                <div class="margin_bottom_20"></div>
+                <div class="rc_btn_01 fl"><a href="#">Купить</a></div>
+                <span class="feedback"> Отзывов: 7</span>
+                <span class="rating"> Рейтинг: 22 </span>
+                <div class="cleaner"></div>
+                <div class="margin_bottom_20 horizontal_divider"></div>
+                <div class="margin_bottom_20"></div>
+            </div>
         	<div class="margin_bottom_40"></div>
         </div> <!-- end of content -->
-        
-      <!--  <div class="templatemo_side_bar">
-       		
-            <div class="header_01">Latest News</div>
-            
-            <div class="latest_news border_bottom">
-                <div class="header_03"><a href="#">Aenean a bibendum augue</a></div>
-                <p>Fusce egestas feugiat turpis, ac ultrices turpis vestibulum at.</p>
-			</div>
-                        
-            <div class="margin_bottom_10"></div>
-            
-			<div class="latest_news">
-                <div class="header_03"><a href="#">Sed nec enim magna</a></div>
-                <p>Proin lectus orci, iaculis at facilisis sed, sodales a neque.</p>
-			</div>
-            
-          <div class="margin_bottom_20 horizontal_divider"></div> 
-			<div class="margin_bottom_20"></div>
-            
-            <div class="header_01">Sample Video</div>
-
-            <div class="latest_news">
-            	<div class="image_wrapper_02"><span></span><a href="#"><img src="images/templatemo_image_03.jpg" alt="video" /></a></div>
-                <p>Donec venenatis tellus non massa blandit vitae volutpat urna fringilla. Aenean ante lorem, vestibulum eu lacinia.</p>
-	      </div>
-                        
-          <div class="margin_bottom_10"></div>
-        </div> <!-- end of right side bar -->
-    	
         <div class="cleaner"></div>    
     </div> <!-- end of content wrapper -->
     

@@ -421,3 +421,49 @@ img {
     margin-right: 0;
 
 }
+#content-category
+{
+    font-weight: 600;
+    display: block;
+    font-size: 20px;
+    color: #999999;
+    margin: 10px auto 10px auto;
+}
+.dynamic-content
+{
+    display:none;
+}
+.dynamic-content span{
+    font-weight: 700;
+    font-style: italic;
+    text-transform:uppercase;
+    color: #FFFFFF;
+}
+.feedback
+{
+    font-size: 20px;
+    float:right;
+    right: 35px;
+}
+#carousel
+{
+    margin: 10px auto;
+}
+.cost, .rating
+{
+    float: right;
+}
+.rating
+{
+    margin-right: 100px;
+    -webkit-transition: ease 2s;
+    -moz-transition: ease 2s;
+    -ms-transition: ease 2s;
+    -o-transition: ease 2s;
+    transition: ease 2s;
+}
+.rating:hover
+{
+    color: green;
+    cursor: pointer;
+}

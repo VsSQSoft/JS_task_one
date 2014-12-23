@@ -27,7 +27,13 @@ $(document).ready(function() {
     $('a#go').click();
 
 
-
+    $(document.getElementsByClassName('rating')).click( function(event)
+    {
+        var rating = $(this).text().substring(9,20);
+        rating++;
+        //alert(rating);
+        $(this).text('Рейтинг: '+rating);
+    });
 
 });
 
@@ -64,23 +70,11 @@ function carousel_left() {
     $(".carousel-items .carousel-item-block").eq(-1).remove(); // выбираем последний элемент карусели и удаляем его
 };
 
-function show_submenu_pc(){
-
-    $('.submenu').hide();
-    $('#submenu-pc:hidden').show(200);
+function show_submenu(e){
+    $('.submenu').hide(200);
+    $(document.getElementsByClassName('dynamic-content')).hide(200);
+    $(document.getElementById(e)).show(200);
+    $('#content-category').text(e.substring(8,25).toUpperCase());
+    $(document.getElementsByClassName('content-' + e)).show(200);
 }
-function show_submenu_psp(){
 
-    $('.submenu').hide();
-    $('#submenu-psp:hidden').show(200);
-}
-function show_submenu_playstation(){
-
-    $('.submenu').hide();
-    $('#submenu-playstation:hidden').show(200);
-}
-function show_submenu_gamecube(){
-
-    $('.submenu').hide();
-    $('#submenu-gamecube:hidden').show(200);
-}
