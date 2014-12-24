@@ -15,6 +15,10 @@ body {
 a:link, a:visited { color: #FFFFFF; text-decoration: none; font-weight: normal; } 
 a:active, a:hover { color: #99FF00; text-decoration: underline; }
 
+a:hover
+{
+    cursor: pointer;
+}
 p {
 	margin: 0px;
 	padding: 0px;
@@ -286,11 +290,10 @@ img {
 #templatemo_footer {
 	clear: both;
 	width: 990px;
-	height: 40px;
 	margin: 0 auto;
 	padding: 20px 0 0 0;
 	text-align: center;
-	background: url(images/templatemo_footer.jpg) no-repeat;
+	background: url(images/templatemo_footer.jpg) repeat-y;
 }
 
 #back {
@@ -463,6 +466,8 @@ img {
     -ms-transition: ease 2s;
     -o-transition: ease 2s;
     transition: ease 2s;
+    font-size: 1.5em;
+    font-weight: 600;
 }
 .rating:hover
 {
@@ -474,4 +479,77 @@ img {
     display:block;
     margin: 5px auto 5px auto;
     float:right;
+}
+#search-holder{
+    float:left;
+    width: 40%;
+}
+#basket-favorites>span {
+    display: block;
+    float: right;
+    margin: 5px;
+    width: 100px;
+    height: 60px;
+}
+.user-menu-link
+{
+    height: 60px;
+    width: 60px;
+}
+
+#user-menu-holder
+{
+    width: 100%;
+    height: 100px;
+}
+#basket-favorites span p{
+    margin: 5px auto;
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+}
+#basket-favorites span{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#timer-holder
+{   text-align: center;
+    width: 400px;
+    margin: 5px auto 5px auto;
+    display: block;
+}
+#socials-pic-four{
+    height: 300px;
+    width: 80%;
+
+}
+.socials-pic
+{
+    width: 200px;
+    height: 245px;
+    display: inline-block;
+}
+#social-pic-one
+{
+    background: url(images/socials.png) no-repeat;
+}
+#social-pic-two
+{
+    background-image: url(images/socials.png);
+    background-position: -205px 0;
+}
+#social-pic-three
+{
+    background-image: url(images/socials.png);
+    background-position: -400px 0;
+}
+#social-pic-four
+{
+    background-image: url(images/socials.png);
+    background-position: -600px 0;
+}
+
+.socials-link
+{
+    display: inline-block;
 }

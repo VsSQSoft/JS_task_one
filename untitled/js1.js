@@ -2,8 +2,8 @@
 
 $(document).ready(function() {
 
-
-
+    var $bought = []; // массив купленного
+    var bool = false;
 
     $('a#go').click( function(event){
         event.preventDefault();
@@ -14,7 +14,7 @@ $(document).ready(function() {
                     .animate({opacity: 1, top: '50%'}, 200);
             });
     });
-    /* Закрытие */
+    // закрытие модального окна
     $('#modal_close, #overlay').click( function(){
         $('#modal_form')
             .animate({opacity: 0, top: '45%'}, 200,
@@ -24,37 +24,34 @@ $(document).ready(function() {
             }
         );
     });
-    $('a#go').click();
+    $('a#go').click(); // самопал по ссылке
 
-
+    //накрутка рейтинга. Если закомментить первый иф и последнюю строку - будет многоразовая
     $(document.getElementsByClassName('rating')).click( function()
     {
+        if(!bool){
         var rating = $(this).text().substring(9,20);
         rating++;
         //alert(rating);
         $(this).text('Рейтинг: '+rating);
+        bool = true;}
     });
-    $('div#sorters input').click(function()
+    //покупка. запоминает дивы в массив
+    $(document.getElementsByClassName('buy')).click( function(elem)
+    {
+        var parental_div = $(this).parent().parent();
+       alert(parental_div.attr('id'));
+        $bought.push(parental_div.attr('id'));
+    });
+    //вывод купленного. деревянный, т.к. выводит по айди дива
+    $('a#basket-link').click( function()
+    {
+        $(document.getElementsByClassName('dynamic-content')).hide(200);
+        for (var i = 0; i < $bought.length; i++)
         {
-            var $target =$('div#main-content');
-            var $massive = $('div.dynamic-content span#cost');
-            var radio = $('input[name=sort]:checked').val();
-            if (radio == 1) {
-                alert(radio);
-                $massive.sort(function (a,b)
-                    {
-                        var an = $(a).substring(6,8);
-                        var bn = $(b).substring(6,8);
-                        alert(an);
-                        if (an && bn) {
-                            return an.localeCompare(bn);
-                        }
-                        return 0;
-                    });}
-            else if (radio== 2) {}
-            else {}
-            $massive.detach().appendTo($target);
-        });
+            $(document.getElementById($bought[i])).show(200);
+        }
+    });
 
 });
 
