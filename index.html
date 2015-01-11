@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Game Website Template, Free Download, XHTML/CSS Layout</title>
+<meta name="keywords" content="Game Website Template, free templates, website templates, CSS, XHTML" />
+<meta name="description" content="Game Website Template - download free XHTML/CSS files from templatemo.com" />
+<link href="CSS/templatemo_style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.2.6.js"> </script>
+<script type="text/javascript" src="js/jscript_actually.js"> </script>
+</head>
+<body>
+<div id="modal_form"><!-- Само окно -->
+<span id="modal_close"> ПРОПУСТИТЬ </span> <!-- Кнопка закрыть -->
+<div id ="modal-radio">
+<input type="radio" name="reglog" value="1" checked onclick="registration()"> Регистрация
+<input type="radio" name="reglog" value="2" onclick="login()"> Вход
+</div>
+<div id="reg-form">
+<form action="#" method="post" title="Регистрация">
+<fieldset>
+<legend> Введите ваши данные </legend>
+<input type="text" class="reg-form-inputs" maxlength="25" required="required" placeholder="Имя">
+<input type="email" class="reg-form-inputs" maxlength="25" required="required" placeholder="Почта">
+<br/>
+<label> Пол
+	<!-- По неизвестным причинам выбрать пол можно только с зажатым Shift или Ctrl, иначе сбрасывается на МУЖСКОЙ -->
+<input type="radio" name="gender" value="2"> Мужской
+<input type="radio" name="gender" value="1" checked> Женский
+<input type="radio" name="gender" value="300"> Средний
+</label>
+</fieldset>
+<input type="submit" class="reg-form-confirm" value="OK">
+</form>
+</div>
+<div id="log-form">
+<form action="#" mSethod="get" title="Логин">
+<fieldset>
+<legend> Вход </legend>
+<label> Логин <input type="text" maxlength="25" placeholder="Логин" required> </label> <br/>
+<label> Пароль <input type="password" maxlength="20" required> </label>
+</fieldset>
+<input type="submit" class="reg-form-confirm" value="ОК">
+</form>
+</div>
+</div>
+<div id="overlay"></div>
+
+
+<div id="templatemo_wrapper_outer">
+<div id="templatemo_wrapper_inner">
+
+<div id="carousel">
+<div class="carousel-button-left" onclick="carousel_left()"> <img src="images/carousel-left.png" alt="LEFT"> </div>
+<div class="carousel-button-right" onclick="carousel_right()"><img src="images/carousel-right.png" alt="RIGHT"> </div>
+
+<div class="carousel-area">
+<div class="carousel-items">
+<div class="carousel-item-block">
+<a href="#" class="a-carousel-image-link"> <img src="images/CarouselImage1.jpg" alt="SORRY"></a>
+</div>
+<div class="carousel-item-block">
+<a href="#" class="a-carousel-image-link"> <img src="images/CarouselImage2.jpg" alt="SORRY"></a>
+</div>
+<div class="carousel-item-block">
+<a href="#" class="a-carousel-image-link"> <img src="images/CarouselImage3.jpg" alt="SORRY"></a>
+</div>
+<div class="carousel-item-block">
+<a href="#" class="a-carousel-image-link"> <img src="images/CarouselImage4.jpg" alt="SORRY"></a>
+</div>
+<div class="carousel-item-block">
+<a href="#" class="a-carousel-image-link"> <img src="images/CarouselImage5.jpg" alt="SORRY"></a>
+</div>
+</div>
+</div>
+</div>
+<div id="templatemo_menu">
+<ul>
+<li><a href="#" class="current" id = "go">Home</a></li>
+<li><a href="#">Games</a></li>
+<li><a href="#">Popular</a></li>
+<li><a href="#">Download</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+
+<div id="templatemo_content_wrapper">
+<div class="templatemo_side_bar margin_right_10">
+<div class="header_01">Games by Platform</div>
+<ul>
+<li><a href="#" onclick="show_submenu('submenu-' + this.text.toLowerCase())">PC</a>
+<ul id="submenu-pc" class="submenu">
+<li> <a href="#">x8086</a> </li>
+<li> <a href="#">Pentium 4</a> </li>
+<li> <a href="#">QuadCoreKiller</a> </li>
+</ul>
+</li>
+<li><a href="#" onclick="show_submenu('submenu-' + this.text.toLowerCase())">PLAYSTATION</a>
+<ul id="submenu-playstation" class="submenu">
+<li> <a href="#">PLAYSTATION 1</a> </li>
+<li> <a href="#">PLAYSTATION 2</a> </li>
+<li> <a href="#">PLAYSTATION 3</a> </li>
+</ul>
+</li>
+<li><a href="#" onclick="show_submenu('submenu-' + this.text.toLowerCase())">PSP</a>
+<ul id="submenu-psp" class="submenu">
+<li> <a href="#">Older PSP</a> </li>
+<li> <a href="#">Current-Gen PSP</a> </li>
+<li> <a href="#">Next-Gen PSP</a> </li>
+</ul>
+</li>
+<li><a href="#" onclick="show_submenu('submenu-' + this.text.toLowerCase())">GAMECUBE</a>
+<ul id="submenu-gamecube" class="submenu">
+<li> <a href="#">IDK</a> </li>
+<li> <a href="#">WHAT </a> </li>
+<li> <a href="#">GAMECUBE&trade;</a> </li>
+<li> <a href="#">IS! </a> </li>
+</ul>
+</li>
+</ul>
+
+<div class="margin_bottom_20 horizontal_divider"></div> 
+<div class="margin_bottom_20"></div>
+<div class="header_01">Search Any Game</div> 
+<form action="" method="post">
+<input type="text" id="search_field" />
+<input type="submit" value="" id="search_button" />
+</form>
+<div class="margin_bottom_20"></div>
+</div> 
+
+<div class="templatemo_content margin_right_10" id="main-content">
+<span id="content-category"> Категория: PC  </span>
+<div class="dynamic-content content-submenu-pc">
+<div class="header_02">NFS Undercover &trade; <span class="cost"> Цена: 500руб.</span></div>
+<div class="image_wrapper_01"><img src="images/CarouselImage3.jpg" alt="image" /></div>
+<p><span> Новая Need For Speed</span> и всё такое.<br/> Официальный сайт для загрузки:<a href="#">NFS: Undercover</a> <br/> Здесь могло бы быть описание игры если б было что описывать:)</p>
+<div class="margin_bottom_20"></div>
+<div class="rc_btn_01 fl"><a href="#">Купить</a></div>
+<span class="feedback"> Отзывов: 7</span>
+<span class="rating"> Рейтинг: 17 </span>
+<div class="cleaner"></div>
+<div class="margin_bottom_20 horizontal_divider"></div>
+<div class="margin_bottom_20"></div>
+</div>
+<div class="dynamic-content content-submenu-pc">
+<div class="header_02">Batman: Arkham Asylum <span class="cost"> Цена: 400руб.</span></div>
+<div class="image_wrapper_01"><img src="images/CarouselImage2.jpg" alt="image" /></div>
+<p> NA NA NA NA NA <span>BATMAN!!11</span> Миллионер-мститель крушит негодяев. Снова.<br/> Официальный сайт для загрузки:  <a href="#">Batman: Anthology</a> <br/> Зубодробительный файтинг от создателей Tekken &reg;. В ПНД Готэма происходит что-то неладное и разобраться под силу только Черному рыцарю...</p>
+<div class="margin_bottom_20"></div>
+<div class="rc_btn_01 fl"><a href="#">Купить</a></div>
+<span class="feedback"> Отзывов: 4</span>
+<span class="rating"> Рейтинг: 9 </span>
+<div class="cleaner"></div>
+<div class="margin_bottom_20 horizontal_divider"></div>
+<div class="margin_bottom_20"></div>
+</div>
+<div class="dynamic-content content-submenu-pc">
+<div class="header_02">Cursed crusader. Russian edition. <span class="cost"> Цена: 200руб.</span></div>
+<div class="image_wrapper_01"><img src="images/CarouselImage1.jpg" alt="image" /></div>
+<p><span> Чад кутежа и угар во мраке ада</span> <br/> Официальный сайт для загрузки:  <a href="#">Hell's fever</a> <br/> Игра по мотивам автобиографии Сергея "Паука" Троицкого. Дайте убийственный концерт в местном ДК и попробуйте пробиться в политику.</p>
+<div class="margin_bottom_20"></div>
+<div class="rc_btn_01 fl"><a href="#">Купить</a></div>
+<span class="feedback"> Отзывов: 12</span>
+<span class="rating"> Рейтинг: 2 </span>
+<div class="cleaner"></div>
+<div class="margin_bottom_20 horizontal_divider"></div>
+<div class="margin_bottom_20"></div>
+</div>
+<div class="dynamic-content content-submenu-playstation">
+<div class="header_02">Stronghold <span class="cost">Цена: 800руб.</span></div>
+<div class="image_wrapper_01"><img src="images/CarouselImage5.jpg" alt="image" /></div>
+<p><span> Возвращение крестоносца!</span> в блеске лат и со щитом.<br/> Официальный сайт для загрузки:  <a href="#">Stronghold3</a> <br/> Одна из самых любимых и почитаемых олдфагами RTS обрела новую жизнь в формате HD, да еще и на консоли!</p>
+<div class="margin_bottom_20"></div>
+<div class="rc_btn_01 fl"><a href="#">Купить</a></div>
+<span class="feedback"> Отзывов: 5</span>
+<span class="rating"> Рейтинг: 11 </span>
+<div class="cleaner"></div>
+<div class="margin_bottom_20 horizontal_divider"></div>
+<div class="margin_bottom_20"></div>
+</div>
+<div class="dynamic-content content-submenu-playstation">
+<div class="header_02">Fable: The lost chapters <span class="cost">Цена: 550руб.</span></div>
+<div class="image_wrapper_01"><img src="images/CarouselImage4.jpg" alt="image" /></div>
+<p><span> Fable 4PS3</span> ...nuff said<br/> Официальный сайт для загрузки:  <a href="#">Fable: The lost chapters</a> <br/> Порт легендарной RPG на консольки)</p>
+<div class="margin_bottom_20"></div>
+<div class="rc_btn_01 fl"><a href="#">Купить</a></div>
+<span class="feedback"> Отзывов: 7</span>
+<span class="rating"> Рейтинг: 22 </span>
+<div class="cleaner"></div>
+<div class="margin_bottom_20 horizontal_divider"></div>
+<div class="margin_bottom_20"></div>
+</div>
+<div class="margin_bottom_40"></div>
+</div> <!-- end of content -->
+<div class="cleaner"></div>
+</div> <!-- end of content wrapper -->
+</div>
+</div>
+ <div id="templatemo_footer">
+Copyright © 2024 <a href="#">Your Company Name</a> | Designed by <a href="http://www.templatemo.com" target="_parent">Free CSS Templates</a>
+</div> <!-- end of footer -->
+<div class="margin_bottom_10"></div>
+
+<div class="content_section">
+<center>
+<a href="http://validator.w3.org/check?uri=referer"><img style="border:0;width:88px;height:31px" src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" width="88" height="31" vspace="8" border="0" /></a>
+<a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px"  src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" vspace="8" border="0" /></a>
+</center>
+<div class="margin_bottom_10"></div>
+</div>
+
+
+
+
+</body>
+</html>
